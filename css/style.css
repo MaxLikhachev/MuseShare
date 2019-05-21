@@ -1,0 +1,126 @@
+@font-face {
+    font-family: Futura;
+    src: url(fonts/Futura/FuturaBookC-Italic.ttf);
+}
+body, .audiojs  {
+    font-family: 'Futura', sans-serif;
+    background-color: #F8F8F8;
+}
+footer {
+    margin-top: 100px;
+}
+.btn {
+    border: 0px;
+}
+.border-bottom {
+    border-bottom: 2px solid #E5E5E5!important;
+}
+.border-top {
+    border-top: 2px solid #E5E5E5!important;
+}
+.btn.btn-primary {
+    background-color: #6610f2;
+    padding: 5px;
+}
+.navbar-light .navbar-nav .active>.nav-link{
+    color: #6610f2;
+}
+a:hover, .navbar-light .navbar-nav .active>.nav-link:hover{
+    color: #8C00FB;
+    text-decoration: none;
+}
+a, .navbar-light .navbar-nav .nav-link{
+    color: black;
+}
+.form-inline {
+    background-color: white;
+}
+.form-control {
+    background: #E5E5E5;
+    border-radius: 1px;
+}
+.navbar {
+    height: 72px;
+    background: #FFFFFF;
+}
+.nav {
+    text-align: left;
+}
+a.nav-link {
+    color: black;
+}
+a.nav-link.active, a.active {
+    color: #6610f2;
+}
+/*-----------------------------------------text*/
+#genres {
+    font-size: 14px;
+    color: #0979FC;
+}
+#name {
+    font-size: 36px;
+    color: #6610F2;
+}
+#author {
+    font-size: 24px;
+    color: #000000;
+}
+#year, #song-title {
+    font-size: 18px;
+    color: #000000;
+}
+#song-author {
+    font-size: 14px;
+}
+h1 {
+    font-size: 64px;
+}
+h6 {
+    color: #C4C4C4;
+}
+/*----------------player-----------------*/
+.audiojs .time, .audiojs .time em, .audiojs .time strong {
+    color: #6610f2;
+    text-shadow: none;
+    border: none;
+}
+.audiojs .time {
+    padding-top: 5px;
+}
+.audiojs  {
+    background: #F8F8F8;
+    box-shadow: none;
+}
+.audiojs .scrubber {
+    background: black;
+    margin: 20px;
+    height: 4px;
+    border-radius: 2px;
+    border: none;
+}
+.audiojs .loaded {
+    background-color: #C4C4C4;
+    background-image: none;
+    border: none;
+}
+.audiojs .progress {
+    background-color: #6610f2;
+    height: 4px;
+    background-image: none;
+    border: none;
+}
+.audiojs .play-pause {
+    border: none;
+    background-color: #F8F8F8;
+}
+.audiojs .pause, .audiojs .play {
+    margin-top: 4px;
+}
+.track-details {
+    color: #6610f2;
+    padding-left: 50px;
+    margin-top: 10px;
+}
+.error .error-message {
+    color: darkred;
+}

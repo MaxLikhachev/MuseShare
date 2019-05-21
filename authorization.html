@@ -1,0 +1,42 @@
+ <div class="row">
+        <div class="col">
+            <h1>Авторизация</h1>
+            <div class="border-bottom col-12 my-5"></div>
+            <form class="col-8 px-0" name="authorization" id="authorization" action="authorization.php" method="get">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" aria-describedby="email-help" placeholder="Ваш email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Пароль</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Пароль">
+                </div>
+                <button type="submit" class="col-6 px-0 btn btn-primary" name="send">Войти</button>
+            </form>
+        </div>
+
+        <div class="col">
+            <h1>Регистрация</h1>
+            <div class="border-bottom col-12 my-5"></div>
+            <form class="col-8 px-0" name="registration" id="registration" action="registration.php" method="get">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="Ваш email">
+                    <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Никнейм</label>
+                    <input type="text" class="form-control" id="exampleInputNick" name="nickname" aria-describedby="nickHelp" placeholder="Ваш никнейм">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword2">Пароль</label>
+                    <input type="password" class="form-control" id="exampleInputPassword2" name="password" placeholder="Пароль">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword3">Подтвердите пароль</label>
+                    <input type="password" class="form-control" id="exampleInputPassword3" name="confirmedpassword" placeholder="Подтвердите пароль">
+                </div>
+                <button type="submit" class="col-8 px-0 btn btn-primary" name="send">Зарегистрироваться</button>
+            </form>
+        </div>
+</div>

@@ -1,0 +1,19 @@
+<form class="col-6 offset-3 mt-5 px-0 pt-5" name="updateSong" action="update.php" id="updateSong" method="get">
+    <h2>Редактировать трек</h2>
+    <div class="border-bottom col-12 my-5"></div>
+                    <input type="text" class="form-control" style="display: none" name="id" value="<?php echo $song_id ?>">
+                    <div class="form-group">
+                        <label for="song-title">Название</label>
+                        <input type="text" class="form-control" id="song-title" name="title" aria-describedby="email-help" placeholder="Название" value="<?php echo $song_title; ?>">
+                    </div>
+                    <div class="form-group">
+                        <label for="song-authors">Другие исполнители</label>
+                        <input type="text" class="form-control" id="song-authors" name="authors" aria-describedby="email-help" placeholder="Другие исполнители" value="<?php echo $song_authors; ?>">
+                    </div>
+
+    <div class="form-group">
+                        <button type="submit" data-dismiss="modal" name="saveSong" class="btn btn-primary">Сохранить</button>
+                        <button type="submit" data-dismiss="modal" name="removeSong" class="btn btn-danger">Удалить</button>
+                    </div>
+
+                </form>

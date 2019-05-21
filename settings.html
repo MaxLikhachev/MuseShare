@@ -1,0 +1,40 @@
+ <div class="row">
+        <div class="col">
+            <h2>Сменить e-mail</h2>
+            <div class="border-bottom col-12 my-5"></div>
+            <form class="col-8 px-0" name="updateEmail" id="updateEmail" action="settings.php" method="get">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" aria-describedby="email-help" placeholder="Ваш email">
+                </div>
+                <div class="form-group">
+                    <label for="confirmedEmail">Повторите e-mail</label>
+                    <input type="email" class="form-control" id="confirmedEmail" name="confirmedEmail" aria-describedby="email-help" placeholder="Повторите email">
+                </div>
+                <button type="submit" class="col-6 px-0 btn btn-primary" name="sendEmail">Сменить e-mail</button>
+            </form>
+        </div>
+
+        <div class="col offset-md-1">
+            <h2>Сменить пароль</h2>
+            <div class="border-bottom col-12 my-5"></div>
+            <form class="col-8 px-0" name="registration" id="registration" action="settings.php" method="get">
+                <div class="form-group">
+                    <label for="lastPassword">Введите старый пароль</label>
+                    <input type="password" class="form-control" id="lastPassword" name="lastPassword" placeholder="Старый пароль">
+                </div>
+                <div class="form-group">
+                    <label for="newPassword">Введите новый пароль</label>
+                    <input type="password" class="form-control" id="newPassword" name="newPassword" placeholder="Новый пароль">
+                </div>
+                <div class="form-group">
+                    <label for="confirmedpassword">Повторите новый пароль</label>
+                    <input type="password" class="form-control" id="confirmedPassword" name="confirmedPassword" placeholder="Повторите новый пароль">
+                </div>
+                <button type="submit" class="col-8 px-0 btn btn-primary" name="sendPassword">Сменить пароль</button>
+            </form>
+        </div>
+    </div>
+ <form class="col-3 px-0" name="exit" id="exit" action="settings.php" method="get">
+     <button type="submit" class="col-8 px-0 btn btn-danger" name="exit">Выйти из аккаунта</button>
+ </form>

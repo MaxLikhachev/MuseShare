@@ -1,0 +1,45 @@
+
+    <div class="row">
+        <div class="col">
+            <h2>Добавить альбом</h2>
+            <div class="border-bottom col-12 my-5"></div>
+            <form class="col-8 px-0" name="uploadAlbum" id="uploadAlbum" action="upload.php" method="get">
+                <div class="form-group">
+                    <label for="album-title">Название</label>
+                    <input type="text" class="form-control" id="album-title" name="title" aria-describedby="email-help" placeholder="Название">
+                </div>
+                <div class="form-group">
+                    <label for="album-authors">Другие исполнители</label>
+                    <input type="text" class="form-control" id="album-authors" name="authors" aria-describedby="email-help" placeholder="Другие исполнители">
+                </div>
+                <div class="form-group">
+                    <label for="album-genre">Жанр</label>
+                    <input type="text" class="form-control" id="album-genre" name="genre" aria-describedby="email-help" placeholder="Жанр">
+                </div>
+                <div class="form-group">
+                    <label for="album-year">Год</label>
+                    <input type="text" class="form-control" id="album-year" name="year" aria-describedby="email-help" placeholder="Год">
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" name="isDemo" id="isDemo">
+                    <label class="form-check-label" value="yes" for="isDemo">Добавить в черновик</label>
+                </div>
+                <button type="submit" class="col-6 px-0 btn btn-primary" name="uploadAlbum">Добавить альбом</button>
+            </form>
+        </div>
+
+        <div class="col offset-md-1">
+            <h2>Добавить трек</h2>
+            <div class="border-bottom col-12 my-5"></div>
+            <form class="col-8 px-0" name="registration" id="registration" action="upload.php" method="get">
+                <div class="form-group">
+                    <label for="title">Название</label>
+                    <input type="text" class="form-control" id="title" name="title" aria-describedby="email-help" placeholder="Название">
+                </div>
+                <div class="form-group">
+                    <label for="authors">Другие исполнители</label>
+                    <input type="text" class="form-control" id="authors" name="authors" aria-describedby="email-help" placeholder="Другие исполнители">
+                </div>
+                <div class="form-group">
+                    <label for="album">Альбом</label>
+                    <select class="form-control" name="album" id="album" aria-describedby="email-help" placeholder="Альбом">

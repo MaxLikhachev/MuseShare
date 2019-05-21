@@ -1,0 +1,26 @@
+ <div class="row mt-5 mb-2">
+     <div class="col-2">
+                <svg width="156" height="156" viewBox="0 0 156 156" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 2L153.697 2V154H2V2ZM79.4055 136.16C112.33 136.16 139.013 109.419 139.013 76.44C139.013 43.4612 112.33 16.72 79.4055 16.72C46.4813 16.72 19.7976 43.4612 19.7976 76.44C19.7976 109.419 46.4813 136.16 79.4055 136.16ZM94.5322 76.44C94.5322 84.8163 87.7561 91.6 79.4055 91.6C71.0549 91.6 64.2788 84.8163 64.2788 76.44C64.2788 68.0637 71.0549 61.28 79.4055 61.28C87.7561 61.28 94.5322 68.0637 94.5322 76.44ZM79.4055 87.8C85.6731 87.8 90.7473 82.7103 90.7473 76.44C90.7473 70.1697 85.6731 65.08 79.4055 65.08C73.1379 65.08 68.0637 70.1697 68.0637 76.44C68.0637 82.7103 73.1379 87.8 79.4055 87.8Z" stroke="black" stroke-width="4"/>
+                </svg>
+            </div>
+            <div class="album-info col-9 py-2">
+                <span id="genres"><?php echo $row['album_genre']; ?></span></br>
+                <span id="name"><?php echo $row['album_title']; ?></span></br>
+                <span id="author"><?php echo $_SESSION['username'].$row['album_authors']; ?></span></br>
+                <span id="year"><?php echo $row['album_year']; ?></span>
+            </div>
+            <div class="edit col-1 pl-5">
+                <form action="update.php">
+                <button type="submit" class="btn" data-toggle="modal" name="album_id" value="<?php echo $row['album_id']; ?>" data-target="#modalUpdateAlbum">
+                    <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 8C4 9.10457 3.10457 10 2 10C0.89543 10 0 9.10457 0 8C0 6.89543 0.89543 6 2 6C3.10457 6 4 6.89543 4 8Z" fill="#C4C4C4"/>
+                        <path d="M4 2C4 3.10457 3.10457 4 2 4C0.89543 4 0 3.10457 0 2C0 0.89543 0.89543 0 2 0C3.10457 0 4 0.89543 4 2Z" fill="#C4C4C4"/>
+                        <path d="M4 14C4 15.1046 3.10457 16 2 16C0.89543 16 0 15.1046 0 14C0 12.8954 0.89543 12 2 12C3.10457 12 4 12.8954 4 14Z" fill="#C4C4C4"/>
+                    </svg>
+                </button>
+                </form>
+            </div>
+  </div>
+
+
